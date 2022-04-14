@@ -1,0 +1,27 @@
+[submodule "rest-app-cs-template"]
+	path = rest-app-cs-template
+	url = https://github.com/stack-spot/rest-app-cs-template.git
+[submodule "logging-app-cs-plugin"]
+	path = logging-app-cs-plugin
+	url = https://github.com/stack-spot/logging-app-cs-plugin.git
+[submodule "metrics-app-cs-plugin"]
+	path = metrics-app-cs-plugin
+	url = https://github.com/stack-spot/metrics-app-cs-plugin.git
+[submodule "secrets-app-cs-plugin"]
+	path = secrets-app-cs-plugin
+	url = https://github.com/stack-spot/secrets-app-cs-plugin.git
+[submodule "queue-app-cs-plugin"]
+	path = queue-app-cs-plugin
+	url = https://github.com/stack-spot/queue-app-cs-plugin.git
+[submodule "trace-app-cs-plugin"]
+	path = trace-app-cs-plugin
+	url = https://github.com/stack-spot/trace-app-cs-plugin.git
+[submodule "bucket-app-cs-plugin"]
+	path = bucket-app-cs-plugin
+	url = https://github.com/stack-spot/bucket-app-cs-plugin.git
+[submodule "repository-app-cs-plugin"]
+	path = repository-app-cs-plugin
+	url = https://github.com/stack-spot/repository-app-cs-plugin.git
+[submodule "authentication-app-cs-plugin"]
+	path = authentication-app-cs-plugin
+	url = https://github.com/stack-spot/authentication-app-cs-plugin.git

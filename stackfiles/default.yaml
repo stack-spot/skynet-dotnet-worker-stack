@@ -1,0 +1,4 @@
+type: app
+displayName: Template Básico
+description: Template para desenvolver um Worker completo utilizando C#, em execução em um cluster de contêiner.
+template: skynet-dotnet-worker-stack/worker-app-cs-template

@@ -1,0 +1,8 @@
+type: app
+displayName: Template com Observability
+description: Template para desenvolver um Worker completo utilizando C#, em execução em um cluster de contêiner com suporte a logging, metrics e trace.
+template: skynet-dotnet-worker-stack/worker-app-cs-template
+plugins:
+  - plugin: skynet-dotnet-stack/logging-app-cs-plugin
+  - plugin: skynet-dotnet-stack/metrics-app-cs-plugin
+  - plugin: skynet-dotnet-stack/trace-app-cs-plugin

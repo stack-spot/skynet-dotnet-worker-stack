@@ -1,0 +1,25 @@
+description: Desenvolva e publique Workers para conectar softwares da empresa no seu produto com nossa Stack cloud native .NET.
+
+name: skynet-dotnet-worker-stack
+
+displayName: Stack Worker
+
+picture: "stack.png"
+
+category: Backend
+
+compatibility:
+  - net5.0
+  - net6.0
+
+technologies: [".NET", "C#", "Api", "OpenAPI", "Splunk", "Prometheus", "Jaeger", "AWS SQS", "AWS DynamoDB", "Docker", "AWS ECS/Fargate"]
+
+about: about.md
+
+useCases:
+  - title: Criar seu Worker
+    content: useCase.md
+    stackfile: stackfiles/default.yaml
+  - title: Criar seu Worker com Observability 
+    content: useCase-observability.md
+    stackfile: stackfiles/api-observability.yaml
