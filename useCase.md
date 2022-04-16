@@ -112,11 +112,6 @@ Manipule arquivos utilizando este plugin que facilita a instrumentação com a A
 
 Armazenar dados ou documentos de forma trivial é um desafio para quase todos os sistemas, e com esse plugin você tem todas as capacidades do AWS DynamoDB disponíveis de forma simples e rápida.
 
-#### Authentication
-
-Através deste plugin facilitamos a capacidade de verificar se um usuário/API possui acesso a um determinado recurso restrito trazendo segurança para sua API.
-
-
 Ao fim do ciclo de desenvolvimento utilizando todas as capacidades que nossa Stack oferece podemos ter uma estrutura completa como ilustra imagem abaixo:
 
 ![Caso de Uso](https://raw.githubusercontent.com/stack-spot/skynet-dotnet-stack/main/use-case.png "Caso de Uso")
