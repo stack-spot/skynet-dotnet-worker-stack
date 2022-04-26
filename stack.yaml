@@ -14,7 +14,7 @@ compatibility:
   - net5.0
   - net6.0
 
-technologies: [".NET", "C#", "Api", "OpenAPI", "Splunk", "Prometheus", "Jaeger", "AWS SQS", "AWS DynamoDB", "Docker", "AWS ECS/Fargate"]
+technologies: [".NET", "C#", "Worker", "Splunk", "Prometheus", "Jaeger", "AWS SQS", "AWS DynamoDB", "Docker", "AWS ECS/Fargate"]
 
 about: about.md
 
