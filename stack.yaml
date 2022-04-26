@@ -4,7 +4,7 @@ name: skynet-dotnet-worker-stack
 
 displayName: Stack Worker
 
-picture: "stack.png"
+# picture: "stack.png"
 
 category: Backend
 
