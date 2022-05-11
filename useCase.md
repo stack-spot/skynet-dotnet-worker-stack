@@ -21,7 +21,7 @@ Os inputs necessários para utilizar o template são:
 
 ## Execução do projeto criado
 
-Após criar o projeto, acesse o diretório onde se encontra a `Solution` e os demais arquivos do projeto. Despois disso, execute o seguinte comando:
+Após criar o projeto, acesse o diretório onde se encontra a `Solution` e os demais arquivos do projeto. Depois disso, execute o seguinte comando:
 
 ```bash
     dotnet restore <meu App>.Worker.sln
