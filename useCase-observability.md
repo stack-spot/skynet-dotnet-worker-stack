@@ -1,11 +1,11 @@
-Oferecemos velocidade e confiança através de nossa Stack para times de desenvolvimento, no processo de conectar softwares de sua empresa através de um Worker.  
+No processo de conectar softwares de uma empresa através de um Worker, a Stack oferece velocidade e confiança para times de desenvolvimento.
 
-Iniciando seu produto através de nosso template base, trazemos o benefício onde você pode buildar e executar o projeto localmente. Ressaltamos que nossa Stack não é intrusiva, criamos código para ajudar times de desenvolvimento, mas cada desenvolvedor opta pelo o que prefere usar.  
+Ao iniciar o seu produto através do template base oferecido, é possível compilar e executar o projeto localmente. É importante lembrar que a Stack não é intrusiva. Os códigos são criados para ajudar times de desenvolvimento, mas cada desenvolvedor opta pelo que prefere usar.   
 
-Para começar sua jornada de desenvolvimento utilizando os recursos disponibilizados pelo Estúdio Skynet aplique o template base para iniciar o desenvolvimento de um Worker completo utilizando C#, rodando em um cluster de contêiner.  
+Para começar sua jornada de desenvolvimento utilizando os recursos disponibilizados pelo Estúdio Skynet, aplique o template base para iniciar o desenvolvimento de um Worker completo usando **C#**, **.NET** e **REST**, rodando em um cluster de contêiner.  
 
 ### Visão Geral
-O **worker-app-cs-template** adiciona em uma stack a capacidade de provisionar serviços que executam em background.
+O template **worker-app-cs-template** adiciona em uma stack a capacidade de provisionar serviços que executam em background.
 
 ### Pré-requisitos
 Para utilizar esse template você precisa utilizar o `CLI` do `StackSpot` que você pode baixar [**aqui**](https://stackspot.com.br/).
@@ -21,13 +21,13 @@ Os inputs necessários para utilizar o template são:
 
 ## Execução do projeto criado
 
-Após criar o projeto, acesse o diretório onde se encontra a `Solution` e os demais arquivos do projeto. Execute o seguinte comando:
+Após criar o projeto, acesse o diretório onde se encontra a **`Solution`** e os demais arquivos do projeto. Depois disso, execute o seguinte comando:
 
 ```bash
     dotnet restore <meu App>.Worker.sln
 ```
 
-Realize também a compilação do projeto, através do comando abaixo:
+Faça a compilação do projeto, através do seguinte comando :
 
 ```bash
     dotnet build <meu App>.Worker.sln
@@ -48,9 +48,9 @@ Para testar a aplicação, ainda no mesmo diretório da `Solution`. Execute o se
 ### Configuração do Docker
 
 Para que o Docker funcione, você precisará adicionar um certificado SSL temporário e montar um volume para manter esse certificado.
-Você pode encontrar no [Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/security/docker-https?view=aspnetcore-6.0) que descrevem as etapas necessárias para Windows, macOS e Linux.
+Você pode encontrar no [**Microsoft Docs**](https://docs.microsoft.com/en-us/aspnet/core/security/docker-https?view=aspnetcore-6.0) que descrevem as etapas necessárias para **Windows**, **macOS** e **Linux**.
 
-Para Windows:
+- Para Windows:
 O seguinte precisará ser executado a partir do seu terminal para criar um certificado:
 
 ```bash
@@ -60,42 +60,39 @@ dotnet dev-certs https --trust
 
 NOTA: Ao usar o PowerShell, substitua %USERPROFILE% por $env:USERPROFILE.
 
-PARA macOS:
+- Para macOS:
 ```bash
 dotnet dev-certs https -ep ${HOME}/.aspnet/https/aspnetapp.pfx -p Your_password123
 dotnet dev-certs https --trust
 ```
 
-PARA Linux:
+- Para Linux:
 ```bash
 dotnet dev-certs https -ep ${HOME}/.aspnet/https/aspnetapp.pfx -p Your_password123
 dotnet dev-certs https --trust
 ```
 
-Para construir e executar os containers docker, execute o comando abaixo na raiz da solução onde você encontra o arquivo docker-compose.yml
+1. Para construir e executar os containers Docker, execute o comando abaixo na raiz da solução onde você encontra o arquivo **`docker-compose.yml`**:
 
  ```bash
  docker-compose -f 'docker-compose.yml' up --build
  ```
 
-Em seguida, abra http://localhost:5000/health no seu navegador.
+2. Em seguida, abra http://localhost:5000/health no seu navegador.
 
 > Dica: Você também pode utilizar uma IDE (VSCode, Visual Studio) de sua preferência para realizar os passos acima.
 
-Aplicando este projeto base, ele já vem com as capacidades de observability citadas abaixo: 
+Aplicando este projeto base, ele já vem com as capacidades de Observability citadas abaixo: 
 
-#### Logging
-
+#### Logging  
 Se você possui vários projetos, microsserviços e ou rotinas, com este plugin você conseguirá manter a qualidade e padrão de informações de log para todas elas, considerando diferentes níveis de log. Isso permite definir Tags para que você consiga quantificar e/ou classificar erros, trazendo uma visão de falhas recorrentes ou permitindo a prevenção de problemas futuros.  
-Também oferecemos a facilidade de integração com ferramentas como Splunk ou AWS Cloud Watch para monitorar e visualizar os dados, garantindo observabilidade de suas aplicações.  
+Além disso, é fácil fazer a integração com ferramentas como Splunk ou AWS Cloud Watch para monitorar e visualizar os dados, garantindo observabilidade de suas aplicações.  
 
-#### Metrics
+#### Metrics  
+O plugin de Metrics facilita a medição da quantidade de requisições em um endpoint crítico ou a monitoramento do tamanho de payloads que são enviados para a sua API. 
 
-Através do plugin de Metrics facilitamos a medição da quantidade de requisições em um endpoint crítico ou monitorar o tamanho de payloads que são enviados para sua API.
-
-#### Trace
-
-Através do plugin de Trace facilitamos a instrumentação de telemetria da sua API através do Opentelemetry com exporter para Jaeger e AWS X-Ray.
+#### Trace  
+Já o plugin de Trace facilita a instrumentação de telemetria da sua API, através do Opentelemetry com exporter para Jaeger e AWS X-Ray. 
   
 Ao fim do ciclo de desenvolvimento, utilizando todas as capacidades que nossa Stack oferece, podemos ter uma estrutura completa como ilustra a imagem abaixo:
 
